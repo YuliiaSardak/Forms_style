@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #1C1C1C;
+}
+h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+input[type=text], select, input[type=number],input[type=tel] {
+    width: 245px;
+    height: 38px;
+    padding: 8px 10px;
+    resize: vertical;
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 7px;
+}
+label {  
+    display: inline-block;
+}
+.description {
+    width: 245px;
+    display: inline-block;
+}
+.description:hover > .text__form {
+    border: 2px solid #007BFF;
+}
+.form {
+    display:flex;
+    gap: 12px;
+}
+.name__form {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+    margin-bottom: 7px;
+}
+.email-account {
+    width: 500px;
+}
+.email-account, .email-profile {
+    height: 38px;
+    padding: 8px 10px;
+    resize: vertical;
+    background: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    margin-bottom: 7px;
+}
+.email {
+    margin-top: 20px;
+}
+p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1px;
+    color: #969696;
+}
+.account, .profile {
+    margin: 0px auto;
+    padding: 50px;
+    box-shadow:
+        inset 0 -3em 3em rgba(28, 25, 196, 0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(109, 47, 201, 0.3);
+}
+.gender {
+    margin-top: 21px;
+    display: flex;
+    gap: 20px;
+}
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+.custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.custom-radio:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("./image/cheked.svg");
+    background-size: contain;
+}
+.custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+}
+#country {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.2px;
+    color: #545454;
+}
+.country {
+    position: relative;
+    display: inline-block;
+    margin-top: 12px;
+}
+.country:after {
+    content: "";
+    background-image: url("./image/select.png");
+    background-repeat: no-repeat;
+    padding: 0 8px;
+    font-size: 12px;
+    position: absolute;
+    right: 8px;
+    top: 40px;
+    z-index: 1;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+    pointer-events: none;
+    box-sizing: border-box;
+}
+select {
+    padding-right: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.description:hover > select {
+    border: 2px solid #007BFF;
+}
+.city {
+    margin-top: 12px;
+}
+button {
+    width: 500px;
+    height: 38px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.1px;
+    padding: 8px 10px;
+    color: #FFFFFF;
+    background: #007BFF;
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.under__button {
+    width: 410px;
+    height: 36px;
+    margin: 22px auto;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #007BFF;
+    cursor: pointer;
+}
+.line {
+    width: 500px;
+    height: 1px;
+    margin-bottom: 20px;
+}
+.form__footer {
+    width: 177px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+.photo__block {
+    display: flex;
+    gap: 20px;
+}
+input[type=file] {
+    position: absolute;
+    opacity: 0;
+}
+.photo__block-text {
+    width: 138px;
+    height: 30px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 7px;
+}
+.photo__block-text:hover {
+    border: 2px solid #007BFF;
+}
+.photo__block-text--underform {
+    width: 141px;
+    height: 18px;
+    margin-top: 9px;
+    position: relative;
+    top: 20px;
+    right: 10px;
+}
+.photo__block-camera{
+    position: relative;
+    bottom: 43px;
+    left: 100px;
+}
+.photo__block-delete-icon {
+    position: relative;
+    bottom: 37px;
+    left: 118px;
+}
+.email-profile {
+    width: 245px;
+}
+.name-profile, .profile {
+    margin-top: 20px;
+}
+.profile__button {
+    width: 150px;
+    height: 38px;
+}
+.section_forms {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 1350px;
+    margin-top: 20px;
+}

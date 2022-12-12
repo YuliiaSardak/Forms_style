@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Forms</title>
+</head>
+<body>
+    <section class="section_forms">
+        <form class="account" action="" method="" name="">
+            <h1>Create an Account</h1>
+            <div class="main form">
+                <div class="name description">
+                    <label class="name__form" for="name">First Name</label>
+                    <input class="text__form" required type="text" id="name" >
+                </div>
+                <div class="name description">
+                    <label class="name__form" for="name">Last Name</label>
+                    <input class="text__form" required type="text" id="name" >
+                </div>
+            </div>
+            <div class="email description">
+                <label class="name__form" for="mail">Email</label>
+                <input class="text__form email-account" required type="email" id="mail">
+            </div>
+            <p>We'll never share your email with anyone else.</p>
+            <div class="gender">
+                <input class="custom-radio" type="radio" name="gender" id="male" value="Чоловіча" checked >
+                <label class="name__form" for="male">Male</label>
+                <input class="custom-radio" type="radio" name="gender" id="female" value="Жіноча">
+                <label class="name__form" for="female">Female</label>
+            </div>
+            <div class="form">
+                <div class="country description"> 
+                    <label class="name__form" for="country">Country</label>
+                    <select required name="" id="country">
+                    <option selected disabled hidden value="">Select</option>
+                    <option value="">Ukraine</option>
+                    <option value="">Germany</option>
+                    <option value="">USA</option>
+                    <option value="">Sweden</option>
+                    <option value="">Italy</option>
+                    <option value="">Other</option>
+                    </select>
+                </div>
+                <div class="city description">
+                    <label class="name__form" for="name">City</label>
+                    <input class="text__form" required type="text" id="name" >
+                </div>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p class="under__button">By clicking the 'Sign Up' button, you confirm that you accept our 
+                <a href="#"> Terms of Use</a>
+                 and 
+                 <a href="#">Privacy Policy</a>
+            </p>
+            <img class="line" src="./image/line.png" alt="">
+            <div class="form__footer">
+                <p>Have an account?</p>
+                <p>
+                    <a href="#">Log In</a>
+                </p>
+            </div>
+        </form>
+        <form class="profile" action="" method="" name="">
+            <h1>Profile</h1>
+            <div class="photo__block">
+                <div class="photo__block-photo">
+                    <img src="./image/account.png" alt="photo">
+                </div>
+                <div class="photo__block-text">
+                    <input class="text__form" required type="file" id="file">
+                    <p class="photo__block-text--underform">Up to 1 MB (300x300 px)</p>
+                    <img class="photo__block-camera" src="./image/Photo Camera.svg" alt="icon-camera">
+                    <img class="photo__block-delete-icon" src="./image/delete_icon.png" alt="delete_icon">
+                </div>
+            </div>
+            <div class="form">
+                <div class="name description">
+                    <label class="name__form name-profile" for="name"> Name</label>
+                    <input class="text__form" required type="text" id="name" >
+                </div>
+                <div class="email description">
+                    <label class="name__form" for="mail">Email</label>
+                    <input class="text__form email-profile" required type="email" id="mail">  
+                </div>
+            </div>
+            <div class="form">
+                <div class="country description"> 
+                    <label class="name__form" for="country">Country</label>
+                    <select required name="" id="country">
+                    <option selected disabled hidden value="">Select</option>
+                    <option value="">Ukraine</option>
+                    <option value="">Germany</option>
+                    <option value="">USA</option>
+                    <option value="">Sweden</option>
+                    <option value="">Italy</option>
+                    <option value="">Other</option>
+                    </select>
+                </div>
+                <div class="city description">
+                    <label class="name__form" for="name">City</label>
+                    <input class="text__form" required type="text" id="city" >
+                </div>
+            </div>
+            <div class="form ">
+                <div class="name description">
+                    <label class="name__form" for="name">Zip Code</label>
+                    <input class="text__form" required type="number" id="Code" >
+                </div>
+                <div class="name description">
+                    <label class="name__form" for="name">Phone Number</label>
+                    <input class="text__form" required type="tel" id="tel" >
+                </div>
+            </div>
+            <button class="profile__button">Update</button>
+        </form>
+    </section>
+</body>
+</html>
